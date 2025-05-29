@@ -1,8 +1,8 @@
 import React from 'react'
 import properties from '../properties';
-import { FaLocationDot } from 'react-icons/fa6'
+import { FaBath, FaBed, FaLocationDot, FaRuler } from 'react-icons/fa6'
 
-const FeaturedProperties = () => {
+const FeaturedProperties = ({setSelectedProperty}) => {
   return (
     <section className='max-w-7xl mx-auto py-16 px-4'>
       <h2 className='text-3xl font-bold mb-8 text-center'>Featured Properties</h2>
@@ -10,7 +10,9 @@ const FeaturedProperties = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {properties.map((property) => (
           <div key={property.id}
-          className='bg-white rounded-2xl drop-shadow-lg overflow-hidden hover:drop-shadow-xl hover:scale-105 transition-all duration-500 relative group cursor-pointer'>
+          className='bg-white rounded-2xl drop-shadow-lg overflow-hidden hover:drop-shadow-xl hover:scale-105 transition-all duration-300 relative group cursor-pointer' 
+          onClick={() => setSelectedProperty(property)}
+          >
             <div className="relative">
               <img src={property.image} alt="" className='w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300 '/>
             </div>
@@ -28,7 +30,20 @@ const FeaturedProperties = () => {
               <h3 className='text-xl font-semibold mb-4 text-gray-800'>{property.title}</h3>
 
               <div className='flex justify-between items-center p-3 bg-blue-50 rounded-lg'>
+                <div className="flex items-center gap-2">
+                  <FaBed className='text-blue-600'/>
+                  <span className='text-gray-600'>{property.beds} Beds</span>
+                </div>
 
+                <div className="flex items-center gap-2">
+                  <FaBath className='text-blue-600'/>
+                  <span className='text-gray-600'>{property.baths} Baths</span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <FaRuler className='text-blue-600'/>
+                  <span className='text-gray-600'>{property.sqft} Sqft</span>
+                </div>
               </div>
             </div>
             
