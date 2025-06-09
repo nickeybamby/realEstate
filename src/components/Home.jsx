@@ -11,7 +11,7 @@ const Home = () => {
 
           <p className='text-lg md:text-2x-l mb-8'>Exclusive Properties and Architectural Masterpices in Lagos</p>
 
-          <div className='bg-white/30 p-8 rounded-3xl shadow-2xl backdrop-blur-md max-w-2xl mx-auto'>
+          {/* <div className='bg-white/30 p-8 rounded-3xl shadow-2xl backdrop-blur-md max-w-2xl mx-auto'>
             <div className='flex flex-col md:flex-row gap-3'>
               <input type="text" placeholder='Search by location' className='flex-1 px-6 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 hover:border-blue-500 hover:bg-blue-50 focus:bg-white text-black transition-colors duration-200' />
 
@@ -23,7 +23,7 @@ const Home = () => {
 
                <button className='bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors'>Search</button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
