@@ -5,6 +5,7 @@ import Contact from './components/Contact'
 import FeaturedProperties from './components/FeaturedProperties'
 import './App.css'
 import { useState } from 'react'
+import Navbar from './components/navbar'
 
 function App() {
 
@@ -12,6 +13,8 @@ function App() {
   return (
     <>
       <div className='min-h-screen w-full bg-gray-50'>
+        <Navbar />
+
         <Home />
 
         <FeaturedProperties setSelectedProperty={setSelectedProperty}/>
