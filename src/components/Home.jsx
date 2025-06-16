@@ -2,7 +2,7 @@ import homeImage from '../../public/homeImage.jpg';
 
 const Home = () => {
   return (
-    <div className='relative h-[100vh]'>
+    <div id='home' className='relative h-[100vh]'>
       <img src={homeImage} alt="" className='w-full h-full object-cover'/>
 
       <div className='absolute inset-0 bg-gradient-to-t from-black/50 via-black/30 to-black/50 flex items-center justify-center'> 
