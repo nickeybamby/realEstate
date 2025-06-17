@@ -14,11 +14,11 @@ const Footer = () => {
 
         <div>
           <h4 className="font-bold mb-4">Quick Links</h4>
-          <ul className="space-y-2 text-gray-400">
-            <li>Home</li>
-            <li>Properties</li>
-            <li>Contact</li>
-            <li>Footer</li>
+          <ul className="flex flex-col space-y-2 text-gray-400">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#properties">Properties</a></li>
+            <a href="#contact">Contact</a>
+            <a href=""></a>
           </ul>
         </div>
         
