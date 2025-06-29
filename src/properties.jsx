@@ -15,34 +15,34 @@ const properties = [
   {
     id: 1,
     image: image1,
-    price: "₦215,000,000",
-    title: "Elegant Coastal Villa",
-    location: "Addo Roundabout, Badore",
+    price: "Affordable Prices",
+    title: "As many acres as needed",
+    location: "Lagos",
     description:
-      "An elegant coastal villa with panoramic ocean views, featuring a spacious terrace and luxurious interiors.",
+      "Vast piece of lands available.",
     beds: 4,
     baths: 3,
     sqft: 2800,
-    images: [image3, image4, image5, image6],
+    images: [image1, image2],
   },
   {
     id: 2,
-    image: image2,
-    price: "₦199,450,000",
-    title: "3 Bedroom Duplex with BQ",
-    location: "Sangotedo",
+    image: image3,
+    price: "Affordable Prices",
+    title: "Bongalow, Duplex",
+    location: "Lagos",
     description:
-      "A stunning beachfront property with direct access to the sand, perfect for sunbathing and water sports.",
+      "We have houses for sale around Nigeria",
     beds: 5,
     baths: 4,
     sqft: 3500,
-    images: [image5, image1, image9, image7],
+    images: [image3, image4, image5],
   },
   {
     id: 3,
-    image: image3,
-    price: "₦350,000,000",
-    title: "4 Bedroom Duplex",
+    image: image6,
+    price: "",
+    title: "Fuel Station",
     location: "Opposite LBS",
     description:
       "A modern loft in the heart of the city, featuring high ceilings and an open floor plan with stylish finishes.",
@@ -51,19 +51,6 @@ const properties = [
     sqft: 2000,
     images: [image3, image6, image5, image1],
   },
-  {
-    id: 4,
-    image: image4,
-    price: "₦500,000,000",
-    title: "5 plots of land in Epe",
-    location: "Kilometer 22 Epe express road",
-    description:
-      "A charming retreat nestled in the mountains, offering breathtaking views and a cozy fireplace for winter nights.",
-    beds: 4,
-    baths: 3.5,
-    sqft: 3200,
-    images: [image2, image4, image5, image12],
-  },
-  
+
 ];
 export default properties;
